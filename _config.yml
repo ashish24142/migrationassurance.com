@@ -5,3 +5,4 @@ author: Ashish Kumar Singh
 markdown: kramdown
 permalink: /:title/
 exclude: [README.md]
+future: true
