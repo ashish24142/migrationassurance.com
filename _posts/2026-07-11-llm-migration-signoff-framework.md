@@ -129,7 +129,8 @@ It deserves a sign-off.
 
 ---
 
-*I'm Ashish Kumar Singh — I build LLM systems for legal and healthcare clients:
-migration validation, prompt regression testing, and document-extraction evals.
-This site is about migration assurance; the [signoff](https://github.com/ashish24142/signoff)
-project is its toolkit.*
+*I'm [Ashish Kumar Singh](https://in.linkedin.com/in/ashish-kr-singh-ml) — an engineering
+leader building enterprise LLM systems (contract intelligence today, a decade of clinical AI
+before that), and I still write the code. Migration validation, prompt regression testing, and
+document-extraction evals are my daily work. This site is about migration assurance;
+[signoff](https://github.com/ashish24142/signoff) is its toolkit.*
