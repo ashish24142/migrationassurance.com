@@ -133,4 +133,5 @@ It deserves a sign-off.
 leader building enterprise LLM systems (contract intelligence today, a decade of clinical AI
 before that), and I still write the code. Migration validation, prompt regression testing, and
 document-extraction evals are my daily work. This site is about migration assurance;
-[signoff](https://github.com/ashish24142/signoff) is its toolkit.*
+[signoff](https://github.com/ashish24142/signoff) is its toolkit. All views are my own,
+drawn from personal experiments and open-source work, never from client or employer data.*
