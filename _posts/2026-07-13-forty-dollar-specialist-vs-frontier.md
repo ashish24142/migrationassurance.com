@@ -45,7 +45,7 @@ every number in this essay yourself.
 ## The scoreboard
 
 | Model | CUAD AUPR (full test split) | Cost per evaluation |
-|---|---|---|
+|---|---:|---:|
 | Claude Opus 4.8 | 0.561 | ~$165 |
 | Claude Opus 4.6 | 0.498 | ~$154 |
 | GPT-5.2 | 0.423 | ~$13 |
@@ -60,7 +60,7 @@ But the per-category table is where it gets interesting.
 ## Where the $40 model beat all three frontier models
 
 | Category | nightwing-14b | Best frontier | GPT-5.2 |
-|---|---|---|---|
+|---|---:|---:|---:|
 | Agreement Date | **0.687** | 0.168 | 0.054 |
 | Effective Date | **0.369** | 0.105 | 0.070 |
 
@@ -74,7 +74,7 @@ specialist won 11 of 40 categories outright, including Document Name (0.711 vs
 Category-by-category against GPT-5.2 alone, the $40 model went 11 for 40:
 
 | Category | nightwing-14b | GPT-5.2 |
-|---|---|---|
+|---|---:|---:|
 | Agreement Date | **0.687** | 0.054 |
 | Effective Date | **0.369** | 0.070 |
 | Document Name | **0.711** | 0.471 |

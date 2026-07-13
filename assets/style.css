@@ -36,3 +36,16 @@ hr{border:0;border-top:1px solid var(--line);margin:2.2em 0}
 .site-foot{max-width:680px;margin:0 auto;padding:20px;border-top:1px solid var(--line)}
 .site-foot p{font:13px 'Segoe UI',system-ui,sans-serif;color:var(--mut)}
 .site-foot a{color:var(--mut)}
+
+/* tables */
+table{border-collapse:collapse;margin:1.6em 0;font-variant-numeric:tabular-nums;
+  font-size:16px;line-height:1.45;min-width:min(100%,560px)}
+th{font:600 13px/1.4 'Segoe UI',system-ui,sans-serif;text-transform:uppercase;
+  letter-spacing:.06em;color:var(--mut);text-align:left;
+  padding:8px 16px 8px 0;border-bottom:2px solid var(--ink)}
+td{padding:9px 16px 9px 0;border-bottom:1px solid rgba(128,128,128,.25);
+  vertical-align:top}
+tr:last-child td{border-bottom:2px solid var(--ink)}
+th[style*="right"],td[style*="right"]{padding-right:0;padding-left:16px}
+tbody tr:hover td{background:rgba(128,128,128,.06)}
+@media(max-width:640px){table{display:block;overflow-x:auto;font-size:15px}}
