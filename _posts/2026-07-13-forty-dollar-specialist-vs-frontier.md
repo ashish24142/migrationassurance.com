@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "I spent $40 fine-tuning a 14B model to beat frontier LLMs at contract review. It lost by 27 points. Except where it won."
+description: "A $40 fine-tuned Qwen3-14B vs Claude Opus 4.8, Claude Opus 4.6 and GPT-5.2 on CUAD contract clause extraction, scored on the official metric. It loses overall and wins 11 of 40 categories against GPT-5.2. Every prediction is public and re-scorable."
 ---
 
 Everyone in legal AI is paying frontier prices right now. The pitch behind my

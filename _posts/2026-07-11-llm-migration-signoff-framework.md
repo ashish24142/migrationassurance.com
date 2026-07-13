@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Is the new model safe to deploy? A sign-off framework for LLM migrations"
+description: "A statistical sign-off framework for LLM model migrations: N-run A/B equivalence testing, flip-rate measurement, and an audit-ready report, built after migrating production document-extraction prompts."
 ---
 
 The email every AI platform team eventually gets arrived on a Tuesday: the model

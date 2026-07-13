@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
-<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 }}">
+{% seo %}
+{% feed_meta %}
 <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>

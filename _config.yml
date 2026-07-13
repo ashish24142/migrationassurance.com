@@ -2,6 +2,17 @@ title: Migration Assurance
 description: Evidence-grade sign-off for model swaps and agent deployments.
 url: "https://migrationassurance.com"
 author: Ashish Kumar Singh
+lang: en
+twitter:
+  card: summary
+social:
+  name: Ashish Kumar Singh
+  links:
+    - https://github.com/ashish24142
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
 markdown: kramdown
 permalink: /:title/
 exclude: [README.md]
