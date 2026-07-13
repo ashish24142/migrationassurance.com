@@ -9,7 +9,9 @@ convention-heavy task. Exactly the kind of thing a small specialist model should
 be able to learn. So what does $40 of fine-tuning actually buy against models
 that cost $165 per evaluation run?
 
-The honest answer: not victory. Something more interesting.
+The honest answer: not victory. Something more interesting. The specialist
+could not lay a hand on the reigning giant. But against GPT-5.2 it won 11 of
+40 categories outright.
 
 ## The setup
 
@@ -66,6 +68,23 @@ Not close wins. On Agreement Date the fine-tune scored four times the best
 frontier model, and twelve times GPT-5.2. Against GPT-5.2 specifically, the
 specialist won 11 of 40 categories outright, including Document Name (0.711 vs
 0.471) and Third Party Beneficiary (0.585 vs 0.355).
+
+## The GPT-5.2 scoreline
+
+Category-by-category against GPT-5.2 alone, the $40 model went 11 for 40:
+
+| Category | nightwing-14b | GPT-5.2 |
+|---|---|---|
+| Agreement Date | **0.687** | 0.054 |
+| Effective Date | **0.369** | 0.070 |
+| Document Name | **0.711** | 0.471 |
+| Third Party Beneficiary | **0.585** | 0.355 |
+| Expiration Date | **0.633** | 0.589 |
+
+(Plus six narrower wins; GPT-5.2 still takes the overall score, 0.423 to 0.291.)
+More than a quarter of the categories, against a frontier model, for the price
+of a nice dinner. The gap between "frontier" and "specialist" is not a wall.
+It is category-shaped.
 
 **Why dates, of all things?** Because CUAD scores by span overlap against what
 human annotators marked, and date questions are annotation-convention questions.
