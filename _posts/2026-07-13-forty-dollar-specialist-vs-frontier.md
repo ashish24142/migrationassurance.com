@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "I spent $40 fine-tuning a 14B model to beat frontier LLMs at contract review. It lost by 27 points. Except where it won."
-description: "A $40 fine-tuned Qwen3-14B vs Claude Opus 4.8, Claude Opus 4.6 and GPT-5.2 on CUAD contract clause extraction, scored on the official metric. It loses overall and wins 11 of 40 categories against GPT-5.2. Every prediction is public and re-scorable."
+description: "A $40 fine-tuned Qwen3-14B vs Claude Opus 4.8, Claude Opus 4.6, GPT-5.2 and GPT-4o on CUAD contract clause extraction, scored on the official metric. It loses to Claude overall and wins 11 of 40 categories against both GPT models. GPT-4o and GPT-5.2 tie, a full model generation apart. Every prediction is public and re-scorable."
 ---
 
 Everyone in legal AI is paying frontier prices right now. The pitch behind my
@@ -11,8 +11,8 @@ be able to learn. So what does $40 of fine-tuning actually buy against models
 that cost $165 per evaluation run?
 
 The honest answer: not victory. Something more interesting. The specialist
-could not lay a hand on the reigning giant. But against GPT-5.2 it won 11 of
-40 categories outright.
+could not lay a hand on the reigning giant, Claude. But against GPT-5.2 it won
+11 of 40 categories outright, and against GPT-4o, another 11.
 
 ## The setup
 
@@ -23,9 +23,9 @@ first. The task: given a contract and a category, extract the exact supporting
 text, or say the clause is absent. Scoring uses CUAD's official metric (area
 under the precision-recall curve), not a metric I invented.
 
-I measured three frontier models first, through one identical pipeline: Claude
-Opus 4.8, Claude Opus 4.6, and GPT-5.2. Then I fine-tuned Qwen3-14B, an open
-Apache-licensed model, with LoRA on CUAD's training split. One A100 for an
+I measured four frontier models first, through one identical pipeline: Claude
+Opus 4.8, Claude Opus 4.6, GPT-5.2, and GPT-4o. Then I fine-tuned Qwen3-14B, an
+open Apache-licensed model, with LoRA on CUAD's training split. One A100 for an
 afternoon. About $40 of GPU time.
 
 Three rules were fixed before any training started, because a benchmark you can
@@ -50,13 +50,19 @@ every number in this essay yourself.
 | Claude Opus 4.8 | 0.561 | ~$165 |
 | Claude Opus 4.6 | 0.498 | ~$154 |
 | GPT-5.2 | 0.423 | ~$13 |
+| GPT-4o | 0.421 | ~$58 |
 | nightwing-14b (my fine-tune) | 0.291 | ~$0 |
 
 Red band. Twenty-seven points below the best frontier model. If I were selling
 you a fine-tuning success story, this essay would end here and you should close
 the tab.
 
-But the per-category table is where it gets interesting.
+Look at the two GPT rows before you scroll on. GPT-4o scores 0.421. GPT-5.2, a
+full model generation later, scores 0.423. Two thousandths of a point of
+improvement across a generation of frontier progress, on a task worth billions to
+the legal industry. Hold that thought.
+
+The per-category table is where it gets interesting.
 
 ## Where the $40 model beat all three frontier models
 
@@ -84,8 +90,18 @@ Category-by-category against GPT-5.2 alone, the $40 model went 11 for 40:
 
 (Plus six narrower wins; GPT-5.2 still takes the overall score, 0.423 to 0.291.)
 More than a quarter of the categories, against a frontier model, for the price
-of a nice dinner. The gap between "frontier" and "specialist" is not a wall.
-It is category-shaped.
+of a nice dinner. And the same is true of GPT-4o: 11 of 40 categories again,
+with even larger margins (Agreement Date 0.687 vs 0.079, Third Party Beneficiary
+0.585 vs 0.102). The gap between "frontier" and "specialist" is not a wall. It is
+category-shaped.
+
+Now back to that thought I asked you to hold. GPT-4o and GPT-5.2, a generation
+apart, land two thousandths of a point apart on this task. A full cycle of
+frontier scaling moved the needle essentially zero. That is the tell: contract
+clause extraction is not bottlenecked by reasoning power that more scale would
+supply. It is bottlenecked by knowing where a lawyer would draw the span, which
+is a convention you learn from examples, not a capability you scale into. That is
+exactly the seam a $40 specialist reaches through.
 
 **Why dates, of all things?** Because CUAD scores by span overlap against what
 human annotators marked, and date questions are annotation-convention questions.
