@@ -131,7 +131,7 @@ It deserves a sign-off.
 
 ---
 
-*I'm [Ashish Kumar Singh](https://in.linkedin.com/in/ashish-kr-singh-ml), an engineering
+*I'm [Ashish Kumar Singh](https://www.linkedin.com/in/ashish-kr-singh-ml/), an engineering
 leader building enterprise LLM systems (contract intelligence today, a decade of clinical AI
 before that), and I still write the code. Migration validation, prompt regression testing, and
 document-extraction evals are my daily work. This site is about migration assurance;

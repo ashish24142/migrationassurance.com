@@ -114,7 +114,7 @@ if you want to run it on your own contracts.
 
 ---
 
-*I'm [Ashish Kumar Singh](https://in.linkedin.com/in/ashish-kr-singh-ml), an
+*I'm [Ashish Kumar Singh](https://www.linkedin.com/in/ashish-kr-singh-ml/), an
 engineering leader building enterprise LLM systems, and I still write the code.
 The nightwing code and every prediction file are on
 [GitHub](https://github.com/ashish24142/nightwing); the trained model is on
