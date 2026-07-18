@@ -145,4 +145,8 @@ prediction, written down before spending: it clears 0.50. The repo, the run
 journal with every failure along the way, and all predictions are public at
 [github.com/ashish24142/nightwing](https://github.com/ashish24142/nightwing).
 
+*Update, July 18: version two ran. The prediction missed, and the framing
+change still gained ten points. The full result is in
+[the sequel]({% post_url 2026-07-18-one-change-ten-points %}).*
+
 *Views my own. Not legal advice, and the model isn't a lawyer either.*
