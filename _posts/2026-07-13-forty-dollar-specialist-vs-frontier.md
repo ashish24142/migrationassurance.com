@@ -149,4 +149,13 @@ journal with every failure along the way, and all predictions are public at
 change still gained ten points. The full result is in
 [the sequel]({% post_url 2026-07-18-one-change-ten-points %}).*
 
+
+---
+
+*I'm [Ashish Kumar Singh](https://in.linkedin.com/in/ashish-kr-singh-ml), an
+engineering leader building enterprise LLM systems, and I still write the code.
+The nightwing code and every prediction file are on
+[GitHub](https://github.com/ashish24142/nightwing); the trained model is on
+[Hugging Face](https://huggingface.co/ashish24142/nightwing-14b-cuad-extractive).*
+
 *Views my own. Not legal advice, and the model isn't a lawyer either.*

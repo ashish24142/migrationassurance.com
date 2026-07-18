@@ -108,6 +108,16 @@ Everything is public and re-scorable at
 raw predictions for every model at every size, the full run journal including
 the four dependency failures and the two silent bugs that free local testing
 caught before they could burn the cloud budget, and the exact runbook that
-produced the numbers.
+produced the numbers. The trained model itself is on
+[Hugging Face](https://huggingface.co/ashish24142/nightwing-14b-cuad-extractive)
+if you want to run it on your own contracts.
+
+---
+
+*I'm [Ashish Kumar Singh](https://in.linkedin.com/in/ashish-kr-singh-ml), an
+engineering leader building enterprise LLM systems, and I still write the code.
+The nightwing code and every prediction file are on
+[GitHub](https://github.com/ashish24142/nightwing); the trained model is on
+[Hugging Face](https://huggingface.co/ashish24142/nightwing-14b-cuad-extractive).*
 
 *Views my own. Not legal advice, and the model still isn't a lawyer.*
