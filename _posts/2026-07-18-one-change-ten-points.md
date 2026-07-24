@@ -118,6 +118,7 @@ if you want to run it on your own contracts.
 engineering leader building enterprise LLM systems, and I still write the code.
 The nightwing code and every prediction file are on
 [GitHub](https://github.com/ashish24142/nightwing); the trained model is on
-[Hugging Face](https://huggingface.co/ashish24142/nightwing-14b-cuad-extractive).*
+[Hugging Face](https://huggingface.co/ashish24142/nightwing-14b-cuad-extractive);
+the paper is at [doi.org/10.5281/zenodo.21530247](https://doi.org/10.5281/zenodo.21530247).*
 
 *Views my own. Not legal advice, and the model still isn't a lawyer.*
