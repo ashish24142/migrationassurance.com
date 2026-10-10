@@ -51,7 +51,9 @@ error of 0.045 against a bet of 0.08. When this model says 0.9, it is right
 roughly nine times in ten. The reliability curve tracks the diagonal closely at
 the confident extremes, which is where real decisions concentrate.
 
-![Calibration curve and triage curve for Jev on 4,182 CUAD screening decisions](/assets/img/jev-act1-charts.png)
+![Calibration curve: when Jev says p it is right about p of the time](/assets/img/act1_calibration_web.png)
+
+![Triage curve: share of decisions auto-cleared vs accuracy among cleared](/assets/img/act1_triage_web.png)
 
 **The triage bet cleared with room to spare.** At a confidence threshold of
 0.85, the model auto-clears 73% of all screening decisions, and those cleared
